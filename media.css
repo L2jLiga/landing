@@ -1,0 +1,40 @@
+/*
+ * Настройка размерностей страницы
+ */
+@media(min-width: 1600px)
+{
+	header,
+	footer,
+	section
+	{
+		padding-left: calc(50vw - 800px);
+		padding-right: calc(50vw - 800px);
+	}
+}
+/*
+ * Адаптивный размер шрифта
+ */
+:root
+{
+	font-family: sans-serif;
+}
+@media(min-width: 1600px)
+{
+	:root{
+		font-size: 22px;
+	}
+}
+@media (min-width: 480px) and (max-width: 1600px)
+{
+	:root{
+		font-size: calc((100vw - 480px)/(1600 - 480)*(22 - 16) + 16px);
+	}
+	font-size: 
+}
+@media(max-width: 480px)
+{
+	:root{
+		font-size: 16px;
+		font-size: calc((100vw - 160px)/(120 - 480)*(14-12) + 20px);
+	}
+}
